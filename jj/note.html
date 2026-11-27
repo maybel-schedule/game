@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>島主修練島・講義</title>
+<style>body{margin:0;background:#f6f3ff;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:#222;line-height:1.75}
+header{position:sticky;top:0;background:#7a4fd6;color:#fff;padding:10px 16px;font-weight:900;display:flex;gap:10px;align-items:center;z-index:2}
+header a{color:#fff;margin-left:auto;font-weight:700}
+main{max-width:920px;margin:0 auto;padding:16px 18px 60px;background:#fff;min-height:100vh;box-shadow:0 0 20px rgba(0,0,0,.06)}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:15px}td,th{border:1px solid #ddd;padding:6px 8px;vertical-align:top}th{background:#efe9ff}
+img{max-width:100%;height:auto}h2,h3{color:#4b2a9e}.lead{background:#fff7e0;padding:8px 12px;border-radius:8px}</style></head>
+<body><header>👑 島主修練島・講義<a href="javascript:window.close()">關閉</a></header><main id="m">載入中…</main>
+<script>const n=(new URLSearchParams(location.search).get('n')||'').replace(/[^a-z_0-9]/gi,'');
+fetch('notes/'+n+'.html').then(r=>{if(!r.ok)throw 0;return r.text()}).then(t=>{document.getElementById('m').innerHTML=t;document.title=(document.querySelector('#m strong,#m h2,#m h3')||{}).textContent||document.title}).catch(()=>{document.getElementById('m').textContent='找不到這份講義。'})</script></body></html>
